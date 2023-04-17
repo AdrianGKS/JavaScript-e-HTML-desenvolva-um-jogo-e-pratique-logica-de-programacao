@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var ano = 2016;
+
+mostra("Flávio tem " + (ano - 1977) + " anos");
+
+mostra("João tem " + (ano - 1996) + " anos");
+
+ano = 2017;
+
+mostra("Laura tem " + (ano - 1976) + " anos");
+
+var idadeFlavio = 39;
+var idadeJoao = 20;
+var idadeLaura = 41;
+var media  = (idadeFlavio + idadeJoao + idadeLaura) / 3;
+
+mostra("A média das idade é " + Math.round(media));
+
+var nome = "Flávio";
+
+mostra("A idade de " + nome + " é " + idadeFlavio);
+
+</script>
